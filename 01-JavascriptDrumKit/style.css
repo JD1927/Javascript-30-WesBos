@@ -1,0 +1,71 @@
+html {
+  font-size: 10px;
+  font-family: sans-serif;
+  background: url("./img/background.jpg") bottom center;
+  background-size: cover;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.keys {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  justify-content: center;
+  min-height: 100vh;
+  place-items: center;
+  column-gap: 1rem;
+  row-gap: 1rem;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+@media (min-width: 576px) {
+  .keys {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .keys {
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: 1fr;
+  }
+}
+
+.key {
+  border: 0.4rem solid black;
+  border-radius: 0.5rem;
+  width: 100px;
+  text-align: center;
+  text-shadow: 0 0 0.5rem black;
+  padding: 1rem 0.5rem;
+  font-size: 1.5rem;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: all 0.07s ease;
+}
+
+.playing {
+  transform: scale(1.2);
+  border-color: #ffc600;
+  box-shadow: 0 0 1rem #ffc600;
+}
+
+kbd {
+  display: block;
+  font-size: 4rem;
+}
+
+.sound {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: #ffc600;
+}
