@@ -1,0 +1,42 @@
+:root {
+  --base: #ffc600;
+  --spacing: 10px;
+  --blur: 10px;
+}
+
+body {
+  text-align: center;
+  background: #193549;
+  color: white;
+  font-family: 'Ubuntu';
+  font-weight: 100;
+  font-size: 50px;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  column-gap: 20px;
+  margin: 0 100px 50px;
+}
+
+.controls {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 2rem;
+}
+
+.hl {
+  color: var(--base);
+}
+
+img {
+  width: 600px;
+  padding: var(--spacing);
+  background: var(--base);
+  filter: blur(var(--blur));
+}
+
+input {
+  width: 100%;
+}
